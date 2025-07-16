@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>807</width>
+    <height>394</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	background-color: #e6ebdc;
+}
+
+QLineEdit, QTextEdit {
+	background-color: #a9af9e;
+	color: #000000;
+	border: none;
+	border-radius: 12px;
+	padding: 6px;
+	font-size: 15px;
+}
+
+QPushButton {
+	background-color: #4A7C59;
+	color: white;
+	border: none;
+	border-radius: 12px;
+	padding: 6px 12px;
+}
+
+QPushButton:hover {
+	background-color: #5A9F73;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="emp_fn_lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>100</y>
+      <width>240</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="emp_ln_lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>150</y>
+      <width>240</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_emp_Button">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>310</y>
+      <width>200</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Complete</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="top_inf_e_label">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>10</y>
+      <width>331</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>22</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Insert Your Informations</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="emp_female_label">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>255</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Female</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="emp_birthyear_comboBox">
+    <property name="geometry">
+     <rect>
+      <x>526</x>
+      <y>150</y>
+      <width>85</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* style for the QComboBox */
+QComboBox {
+	border-radius: 10px;
+	padding-left: 10px;
+}
+
+/* style for drop down area */
+QComboBox::drop-down {
+	border: 0px;
+}
+
+/* style for drop down arrow */
+QComboBox::down-arrow {
+	image: url(D:\Python/Projects/GitHub_PR/Hospital Management/down-arrow-8-128);
+	width: 12 px;
+	height: 12px;
+	margin-right: 10px;
+}
+
+/* style for list menu */
+QComboBox QListView {
+font-size: 12px;
+border: 1px solid #000000;
+padding: 5px;
+background-color: #a9af9e;
+outline: 0px;
+}
+
+QComboBox {
+	background-color: #a9af9e;
+    font-size: 15px;
+    font-family: &quot;Arad Medium&quot;;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #a9af9e;
+    color: black;
+    selection-background-color: #F3E9E2;
+    selection-color: black;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="emp_fn_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>100</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>First Name:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="emp_id_lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>250</y>
+      <width>240</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="emp_gender_label">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>250</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Gender:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="emp_id_label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>101</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Employee ID:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="emp_male_label">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>255</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Male</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="emp_phone_label">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>100</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Phone Number:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="emp_diploma_lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>200</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="emp_phone_lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>100</y>
+      <width>250</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="emp_ln_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>150</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Last Name:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="emp_diploma_label">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>200</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Diploma:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="emp_birthmonth_comboBox">
+    <property name="geometry">
+     <rect>
+      <x>613</x>
+      <y>150</y>
+      <width>85</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* style for the QComboBox */
+QComboBox {
+	border-radius: 10px;
+	padding-left: 10px;
+}
+
+/* style for drop down area */
+QComboBox::drop-down {
+	border: 0px;
+}
+
+/* style for drop down arrow */
+QComboBox::down-arrow {
+	image: url(D:\Python/Projects/GitHub_PR/Hospital Management/down-arrow-8-128);
+	width: 12 px;
+	height: 12px;
+	margin-right: 10px;
+}
+
+/* style for list menu */
+QComboBox QListView {
+font-size: 12px;
+border: 1px solid #000000;
+padding: 5px;
+background-color: #a9af9e;
+outline: 0px;
+}
+
+QComboBox {
+	background-color: #a9af9e;
+    font-size: 15px;
+    font-family: &quot;Arad Medium&quot;;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #a9af9e;
+    color: black;
+    selection-background-color: #F3E9E2;
+    selection-color: black;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="emp_nid_lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>200</y>
+      <width>240</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="emp_nid_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>200</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>National ID:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="emp_birthday_comboBox">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>150</y>
+      <width>85</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* style for the QComboBox */
+QComboBox {
+	border-radius: 10px;
+	padding-left: 10px;
+}
+
+/* style for drop down area */
+QComboBox::drop-down {
+	border: 0px;
+}
+
+/* style for drop down arrow */
+QComboBox::down-arrow {
+	image: url(D:\Python/Projects/GitHub_PR/Hospital Management/down-arrow-8-128);
+	width: 12 px;
+	height: 12px;
+	margin-right: 10px;
+}
+
+/* style for list menu */
+QComboBox QListView {
+font-size: 12px;
+border: 1px solid #000000;
+padding: 5px;
+background-color: #a9af9e;
+outline: 0px;
+}
+
+QComboBox {
+	background-color: #a9af9e;
+    font-size: 15px;
+    font-family: &quot;Arad Medium&quot;;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #a9af9e;
+    color: black;
+    selection-background-color: #F3E9E2;
+    selection-color: black;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="emp_birthdate_label">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>148</y>
+      <width>90</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Birthdate:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="emp_male_radioButton">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>255</y>
+      <width>16</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="emp_female_radioButton">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>255</y>
+      <width>16</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

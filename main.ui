@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>531</width>
+    <height>322</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arad Medium</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	background-color: #e6ebdc;
+}
+
+QLineEdit, QTextEdit {
+	background-color: #a9af9e;
+	color: #000000;
+	border: none;
+	border-radius: 12px;
+	padding: 6px;
+	font-size: 15px;
+}
+
+QPushButton {
+	background-color: #4A7C59;
+	color: white;
+	border: none;
+	border-radius: 12px;
+	padding: 6px 12px;
+}
+
+QPushButton:hover {
+	background-color: #5A9F73;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="add_pt_order_Button">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>105</y>
+      <width>220</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Add Patient</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_emp_order_Button">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>205</y>
+      <width>220</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Add Employee</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="emp_inf_order_Button">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>205</y>
+      <width>220</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Employee's Information</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pt_inf_order_Button">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>105</y>
+      <width>220</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Patient's Information</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="order_label">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>20</y>
+      <width>331</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arad Medium</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>You Are Here For What?</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
